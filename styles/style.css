@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+* {
+    font-family: "Jersey 15", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #191A19;
+  }
+
+.navbar-background{
+    background-color: #191A19;
+}
+
+.navbar-title {
+    color: #1E5128;
+}
+
+.welcome-paragraph {
+    color: #4E9F3D;
+}
+

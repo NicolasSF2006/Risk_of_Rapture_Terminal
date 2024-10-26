@@ -2,7 +2,37 @@
 
 * {
     font-family: "Jersey 15", sans-serif;
+    --bs-modal-header-border-color: #4E9F3D;
+    --bs-modal-footer-border-color: #4E9F3D;
+    cursor: url(../img/normal_cursor.png), auto;
 }
+
+input[type="text"],
+textarea {
+  cursor: text;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;         /* width of the entire scrollbar */
+  }
+  
+*::-webkit-scrollbar-track {
+    background: #191A19;
+    border-radius: 10px;        /* color of the tracking area */
+  }
+  
+*::-webkit-scrollbar-thumb {
+    background: repeating-linear-gradient(
+    to bottom,
+    #191A19,
+    #4E9F3D, 
+    #4E9F3D 2px, 
+    transparent 2px, 
+    transparent 3px
+  );
+    background-color: #191A19;    /* color of the scroll thumb */       /* roundness of the scroll thumb */
+    border: 1px solid #191A19;  /* creates padding around scroll thumb */
+  }
 
 html, body {
     height: 100%;
@@ -20,5 +50,17 @@ html, body {
 
 .welcome-paragraph {
     color: #4E9F3D;
+}
+
+.btn:hover {
+    cursor: url(../img/link_select.png), auto;
+}
+
+a:hover {
+    cursor: url(../img/link_select.png), auto;
+}
+
+p:hover {
+    cursor: url(../img/text.png), auto;
 }
 

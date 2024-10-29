@@ -64,3 +64,12 @@ p:hover {
     cursor: url(../img/text.png), auto;
 }
 
+#animated-text {
+  display: inline;
+}
+
+#cursor {
+  opacity: 1; /* Começa invisível */
+  transition: opacity 0.7s; /* Transição suave para aparecer e desaparecer */
+  color: #4E9F3D;
+}

@@ -1,0 +1,60 @@
+@import url(./style.css);
+
+
+.main-content {
+    text-align: center;
+    margin-top: 1.25rem;
+    padding: 1.25rem;
+    background-color: #1E5128;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    width: 90vw;
+    margin: 25px auto;
+}
+
+
+.grade {
+    width: 200px;
+    display: inline-block;
+    white-space: pre-line;
+    color: #4E9F3D;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#cursor {
+    font-weight: bold;
+    opacity: 1;
+    transition: opacity 0.7s; /* Suaviza a transição de opacidade */
+    text-align: center; /* Alinha o texto ao centro */ 
+    visibility: visible; /* Mantém o texto visível inicialmente */
+}
+
+
+@media (max-width: 885px) {
+    .main-content {
+        width: 70vw;
+        border-radius: 25px;
+    }
+
+    #animated-text {
+        flex-direction: column; /* Muda a direção para coluna */
+        align-items: center; /* Centraliza os itens na coluna */
+    }
+
+    .grade {
+        width: auto; /* Permite que as grades ocupem o espaço disponível */
+        margin-bottom: 50px; /* Espaçamento entre as grades na coluna */
+    }
+}
+
+#cursor {
+    font-weight: bold;
+    opacity: 1;
+    transition: opacity 0.7s;
+}
+

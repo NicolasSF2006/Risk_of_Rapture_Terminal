@@ -59,6 +59,6 @@
 }
 
 .list-group-item {
-    border: var(--bs-list-group-border-width) solid #4E9F3D;
+    border-color: #4E9F3D;
 }
 

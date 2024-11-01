@@ -1,8 +1,8 @@
 const grades = [
-    `Criaturas de Grau 3\n\n- Nome: 5 Nions\n- Descrição: 10 Nions\n- Poderes: 20 Nions\n- Fraquezas: 20 Nions\n- Outros detalhes: 5 Nions\n- Segredos: 40 Nions\n\nTotal possível: 100 Nions`,
-    `Criaturas de Grau 2\n\n- Nome: 5 Nions\n- Descrição: 15 Nions\n- Poderes: 25 Nions\n- Fraquezas: 25 Nions\n- Outros detalhes: 5 Nions\n- Segredos: 55 Nions\n\nTotal possível: 130 Nions`,
-    `Criaturas de Grau 1\n\n- Nome: 10 Nions\n- Descrição: 25 Nions\n- Poderes: 40 Nions\n- Fraquezas: 40 Nions\n- Outros detalhes: 10 Nions\n- Segredos: 75 Nions\n\nTotal possível: 200 Nions`,
-    `Criaturas de Grau Especial\n\n- Nome: 15 Nions\n- Descrição: 50 Nions\n- Poderes: 65 Nions\n- Fraquezas: 65 Nions\n- Outros detalhes: 15 Nions\n- Segredos: 150 Nions\n\nTotal possível: 360 Nions`
+    `Criaturas de Grade 3\n\n- Nome: 5 Nions\n- Descrição: 10 Nions\n- Poderes: 20 Nions\n- Fraquezas: 20 Nions\n- Outros detalhes: 5 Nions\n- Segredos: 40 Nions\n\nTotal possível: 100 Nions`,
+    `Criaturas de Grade 2\n\n- Nome: 5 Nions\n- Descrição: 15 Nions\n- Poderes: 25 Nions\n- Fraquezas: 25 Nions\n- Outros detalhes: 5 Nions\n- Segredos: 55 Nions\n\nTotal possível: 130 Nions`,
+    `Criaturas de Grade 1\n\n- Nome: 10 Nions\n- Descrição: 25 Nions\n- Poderes: 40 Nions\n- Fraquezas: 40 Nions\n- Outros detalhes: 10 Nions\n- Segredos: 75 Nions\n\nTotal possível: 200 Nions`,
+    `Criaturas de Grade Especial\n\n- Nome: 15 Nions\n- Descrição: 50 Nions\n- Poderes: 65 Nions\n- Fraquezas: 65 Nions\n- Outros detalhes: 15 Nions\n- Segredos: 150 Nions\n\nTotal possível: 360 Nions`
 ];
 
 const animatedTextElement = document.getElementById("animated-text");

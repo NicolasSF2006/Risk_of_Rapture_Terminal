@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 
 * {
-    font-family: "Jersey 15", sans-serif;
-    --bs-modal-header-border-color: #4E9F3D;
-    --bs-modal-footer-border-color: #4E9F3D;
-    cursor: url(../img/normal_cursor.png), auto;
+  font-family: "Jersey 15", sans-serif;
+  --bs-modal-header-border-color: #4E9F3D;
+  --bs-modal-footer-border-color: #4E9F3D;
+  cursor: url(../img/normal_cursor.png), auto;
 }
 
 input[type="text"],
@@ -13,55 +13,63 @@ textarea {
 }
 
 *::-webkit-scrollbar {
-    width: 10px;         /* width of the entire scrollbar */
-  }
-  
+  width: 10px;
+  /* width of the entire scrollbar */
+}
+
 *::-webkit-scrollbar-track {
-    background: #191A19;
-    border-radius: 10px;        /* color of the tracking area */
-  }
-  
+  background: #191A19;
+  border-radius: 10px;
+  /* color of the tracking area */
+}
+
 *::-webkit-scrollbar-thumb {
-    background: repeating-linear-gradient(
-    to bottom,
-    #191A19,
-    #4E9F3D, 
-    #4E9F3D 2px, 
-    transparent 2px, 
-    transparent 3px
-  );
-    background-color: #191A19;    /* color of the scroll thumb */       /* roundness of the scroll thumb */
-    border: 1px solid #191A19;  /* creates padding around scroll thumb */
-  }
+  background: repeating-linear-gradient(to bottom,
+      #191A19,
+      #4E9F3D,
+      #4E9F3D 2px,
+      transparent 2px,
+      transparent 3px);
+  background-color: #191A19;
+  /* color of the scroll thumb */
+  /* roundness of the scroll thumb */
+  border: 1px solid #191A19;
+  /* creates padding around scroll thumb */
+}
 
-html, body {
-    height: 100%;
-    margin: 0;
-    background-color: #191A19;
-  }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #191A19;
+}
 
-.navbar-background{
-    background-color: #191A19;
+.navbar-background {
+  background-color: #191A19;
 }
 
 .navbar-title {
-    color: #1E5128;
+  color: #1E5128;
 }
 
 .welcome-paragraph {
-    color: #4E9F3D;
+  color: #4E9F3D;
 }
 
 .btn:hover {
-    cursor: url(../img/link_select.png), auto;
+  cursor: url(../img/link_select.png), auto;
+}
+
+#img-btn {
+  cursor: url(../img/link_select.png), auto;
 }
 
 a:hover {
-    cursor: url(../img/link_select.png), auto;
+  cursor: url(../img/link_select.png), auto;
 }
 
 p:hover {
-    cursor: url(../img/text.png), auto;
+  cursor: url(../img/text.png), auto;
 }
 
 #animated-text {
@@ -69,8 +77,9 @@ p:hover {
 }
 
 #cursor {
-  opacity: 1; /* Começa invisível */
-  transition: opacity 0.7s; /* Transição suave para aparecer e desaparecer */
+  opacity: 1;
+  /* Começa invisível */
+  transition: opacity 0.7s;
+  /* Transição suave para aparecer e desaparecer */
   color: #4E9F3D;
 }
-

@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <header>
 
         <nav class="navbar navbar-expand-lg navbar-dark navbar-background border-bottom border-success">
@@ -53,73 +52,351 @@
 
     </header>
 
+
     <main>
-        <div class="slider">
-            <div class="item position-absolute top-0 d-flex flex-column align-items-center">
-                <h1>?</h1>
-                <img class="item__image" src="./img/gliched_question_mark.jpeg" alt="">
-                <p class="item__text mt-3 text-center fs-5 ">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
-                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
-                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
-                </p>
+
+        <section class="Sector pb-5">
+            <h1 class="text-center navbar-title m-5">Proteção</h1>
+
+            <div class="card welcome-paragraph w-50 ms-3 p-4 border rounded border-2 navbar-background"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <h2 class="pb-2">Missão 1</h2>
+                <p>A colônia de Gelthar, um planeta sob administração da Corporação, enfrenta uma invasão de insetos
+                    conhecidos
+                    como Beetles. Esses insetos se multiplicam rapidamente e ameaçam a estabilidade ecológica e o
+                    progresso da
+                    colônia. Sua missão é eliminar o enxame antes que ele se espalhe e comprometa as operações e a
+                    expansão
+                    territorial em Gelthar.</p>
             </div>
-            <div class="item item position-absolute top-0 d-flex flex-column align-items-center">
-                <h1>Slide 2</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
-                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
-                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
-                </p>
+
+            <!-- Missão-1 Offcanvas -->
+
+            <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body welcome-paragraph">
+                    <p>A colônia de Gelthar, um planeta sob administração da Corporação, enfrenta uma invasão de insetos
+                        conhecidos
+                        como Beetles. Esses insetos se multiplicam rapidamente e ameaçam a estabilidade ecológica e o
+                        progresso da
+                        colônia. Sua missão é eliminar o enxame antes que ele se espalhe e comprometa as operações e a
+                        expansão
+                        territorial em Gelthar.</p>
+                    <p class="border-top pt-2">Concluido:</p>
+                    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped bg-success" style="width: 25%">0%</div>
+                      </div>
+                      <ul class="mt-4">
+                        <li>
+                            <p>???</p>
+                        </li>
+                        <li>
+                            <p>???</p>
+                        </li>
+                        <li>
+                            <p>???</p>
+                        </li>
+                      </ul>
+                </div>
             </div>
-            <div class="item item position-absolute top-0 d-flex flex-column align-items-center">
-                <h1>Slide 3</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
-                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
-                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
-                </p>
-            </div>
-            <div class="item item position-absolute top-0 d-flex flex-column align-items-center">
-                <h1>Slide 4</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
-                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
-                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
-                </p>
-            </div>
-            <div class="item item position-absolute top-0 d-flex flex-column align-items-center">
-                <h1>Slide 5</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
-                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
-                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
-                </p>
-            </div>
-            <div class="item item position-absolute top-0 d-flex flex-column align-items-center">
-                <h1>Slide 6</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
-                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
-                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
-                </p>
-            </div>
-            <div class="item item position-absolute top-0 d-flex flex-column align-items-center">
-                <h1>Slide 7</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
-                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
-                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
-                </p>
-            </div>
-            <button id="next">></button>
-            <button id="prev"><</button>
+
+            <div class="card welcome-paragraph w-50 ms-3 mt-5 p-4 border rounded border-2 navbar-background"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <h2 class="pb-2">Missão 1</h2>
+            <p>???</p>
         </div>
+
+        <!-- Missão-1 Offcanvas -->
+
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body welcome-paragraph">
+                <p>???</p>
+                <p class="border-top pt-2">Concluido:</p>
+                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-success" style="width: 25%">0%</div>
+                  </div>
+                  <ul class="mt-4">
+                    <li>
+                        <p>???</p>
+                    </li>
+                    <li>
+                        <p>???</p>
+                    </li>
+                    <li>
+                        <p>???</p>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+
+        <div class="card welcome-paragraph w-50 ms-3 mt-5 p-4 border rounded border-2 navbar-background"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <h2 class="pb-2">Missão 1</h2>
+        <p>???</p>
+    </div>
+
+    <!-- Missão-1 Offcanvas -->
+
+    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body welcome-paragraph">
+            <p>???</p>
+            <p class="border-top pt-2">Concluido:</p>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped bg-success" style="width: 25%">0%</div>
+              </div>
+              <ul class="mt-4">
+                <li>
+                    <p>???</p>
+                </li>
+                <li>
+                    <p>???</p>
+                </li>
+                <li>
+                    <p>???</p>
+                </li>
+              </ul>
+        </div>
+    </div>
+
+            <h1 class="text-center navbar-title m-5">Inteligência</h1>
+
+            <div class="card welcome-paragraph w-50 ms-3 mt-5 p-4 border rounded border-2 navbar-background"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <h2 class="pb-2">Missão 1</h2>
+            <p>???</p>
+        </div>
+
+        <!-- Missão-1 Offcanvas -->
+
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body welcome-paragraph">
+                <p>???</p>
+                <p class="border-top pt-2">Concluido:</p>
+                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-success" style="width: 25%">0%</div>
+                  </div>
+                  <ul class="mt-4">
+                    <li>
+                        <p>???</p>
+                    </li>
+                    <li>
+                        <p>???</p>
+                    </li>
+                    <li>
+                        <p>???</p>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+
+        <div class="card welcome-paragraph w-50 ms-3 mt-5 p-4 border rounded border-2 navbar-background"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <h2 class="pb-2">Missão 1</h2>
+        <p>???</p>
+    </div>
+
+    <!-- Missão-1 Offcanvas -->
+
+    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body welcome-paragraph">
+            <p>???</p>
+            <p class="border-top pt-2">Concluido:</p>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped bg-success" style="width: 25%">0%</div>
+              </div>
+              <ul class="mt-4">
+                <li>
+                    <p>???</p>
+                </li>
+                <li>
+                    <p>???</p>
+                </li>
+                <li>
+                    <p>???</p>
+                </li>
+              </ul>
+        </div>
+    </div>
+
+    <div class="card welcome-paragraph w-50 ms-3 mt-5 p-4 border rounded border-2 navbar-background"
+    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+    <h2 class="pb-2">Missão 1</h2>
+    <p>???</p>
+</div>
+
+<!-- Missão-1 Offcanvas -->
+
+<div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body welcome-paragraph">
+        <p>???</p>
+        <p class="border-top pt-2">Concluido:</p>
+        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped bg-success" style="width: 25%">0%</div>
+          </div>
+          <ul class="mt-4">
+            <li>
+                <p>???</p>
+            </li>
+            <li>
+                <p>???</p>
+            </li>
+            <li>
+                <p>???</p>
+            </li>
+          </ul>
+    </div>
+</div>
+
+            <h1 class="text-center navbar-title m-5">Exploração</h1>
+
+            <div class="card welcome-paragraph w-50 ms-3 mt-5 p-4 border rounded border-2 navbar-background"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <h2 class="pb-2">Missão 1</h2>
+            <p>???</p>
+        </div>
+
+        <!-- Missão-1 Offcanvas -->
+
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body welcome-paragraph">
+                <p>???</p>
+                <p class="border-top pt-2">Concluido:</p>
+                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-success" style="width: 25%">0%</div>
+                  </div>
+                  <ul class="mt-4">
+                    <li>
+                        <p>???</p>
+                    </li>
+                    <li>
+                        <p>???</p>
+                    </li>
+                    <li>
+                        <p>???</p>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+
+        <div class="card welcome-paragraph w-50 ms-3 mt-5 p-4 border rounded border-2 navbar-background"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <h2 class="pb-2">Missão 1</h2>
+        <p>???</p>
+    </div>
+
+    <!-- Missão-1 Offcanvas -->
+
+    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body welcome-paragraph">
+            <p>???</p>
+            <p class="border-top pt-2">Concluido:</p>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped bg-success" style="width: 25%">0%</div>
+              </div>
+              <ul class="mt-4">
+                <li>
+                    <p>???</p>
+                </li>
+                <li>
+                    <p>???</p>
+                </li>
+                <li>
+                    <p>???</p>
+                </li>
+              </ul>
+        </div>
+    </div>
+
+    <div class="card welcome-paragraph w-50 ms-3 mt-5 p-4 border rounded border-2 navbar-background"
+    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+    <h2 class="pb-2">Missão 1</h2>
+    <p>???</p>
+</div>
+
+<!-- Missão-1 Offcanvas -->
+
+<div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body welcome-paragraph">
+        <p>???</p>
+        <p class="border-top pt-2">Concluido:</p>
+        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped bg-success" style="width: 25%">0%</div>
+          </div>
+          <ul class="mt-4">
+            <li>
+                <p>???</p>
+            </li>
+            <li>
+                <p>???</p>
+            </li>
+            <li>
+                <p>???</p>
+            </li>
+          </ul>
+    </div>
+</div>
+        </section>
+
     </main>
 
-    <script src="missoes.js"></script>
-</body>
 
-</html>
+    <footer>
+
+
+
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+</body>
 
 </html>

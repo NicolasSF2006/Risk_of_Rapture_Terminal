@@ -23,7 +23,7 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover border-success-subtle lg-pt-3"
@@ -48,6 +48,17 @@
                     </ul>
                 </div>
             </div>
+            <div class="btn-group dropstart mx-2 d-none d-lg-block">
+                <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Setores
+                </button>
+                <ul class="dropdown-menu bg-dark shadow">
+                    <li><a class="dropdown-item link-success" href="#protection">Setor de Proteção</a></li>
+                    <li><a class="dropdown-item link-success" href="#intelligence">Setor de Inteligência</a></li>
+                    <li><a class="dropdown-item link-success" href="#exploration">Setor de Exploração</a></li>
+                </ul>
+            </div>
         </nav>
 
     </header>
@@ -55,30 +66,25 @@
 
     <main>
 
-        <section class="Sector pb-5">
-            <h1 class="text-center navbar-title m-5">Proteção</h1>
-
-            <div class="card welcome-paragraph w-50 ms-3 p-4 border rounded border-2 navbar-background"
-                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                <h2 class="pb-2">Missão 1</h2>
-                <p>A colônia de Gelthar, um planeta sob administração da Corporação, enfrenta uma invasão de insetos
-                    conhecidos
-                    como Beetles. Esses insetos se multiplicam rapidamente e ameaçam a estabilidade ecológica e o
-                    progresso da
-                    colônia. Sua missão é eliminar o enxame antes que ele se espalhe e comprometa as operações e a
-                    expansão
-                    territorial em Gelthar.</p>
+        <section class="sector pb-5 ms-lg-3 mt-5 text-center text-lg-start">
+            <div class="dropdown d-block d-lg-none mt-4">
+                <button class="btn btn-success dropdown-toggle px-4" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Setores
+                </button>
+                <ul class="dropdown-menu bg-dark">
+                    <li><a class="dropdown-item welcome-paragraph" href="#protection">Setor de Proteção</a></li>
+                    <li><a class="dropdown-item welcome-paragraph" href="#intelligence">Setor de Intelgência</a></li>
+                    <li><a class="dropdown-item welcome-paragraph" href="#exploration">Setor de Exploração</a></li>
+                </ul>
             </div>
 
-            <!-- Missão-1 Offcanvas -->
+            <section class="sector__protection d-lg-block d-flex flex-column align-items-center">
+                <h1 class="navbar-title mt-5 mb-5 w-100 pb-1" id="protection">Proteção</h1>
 
-            <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body welcome-paragraph">
+                <div class="card welcome-paragraph w-75 p-4 border rounded border-2 navbar-background"
+                    data-bs-toggle="offcanvas" data-bs-target="#missao__protecao-1" aria-controls="offcanvasRight">
+                    <h2 class="pb-2">Missão 1</h2>
                     <p>A colônia de Gelthar, um planeta sob administração da Corporação, enfrenta uma invasão de insetos
                         conhecidos
                         como Beetles. Esses insetos se multiplicam rapidamente e ameaçam a estabilidade ecológica e o
@@ -86,299 +92,335 @@
                         colônia. Sua missão é eliminar o enxame antes que ele se espalhe e comprometa as operações e a
                         expansão
                         territorial em Gelthar.</p>
-                    <p class="border-top pt-2">Concluido:</p>
-                    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar progress-bar-striped bg-success" style="width: 25%">0%</div>
-                      </div>
-                      <ul class="mt-4">
-                        <li>
-                            <p>???</p>
-                        </li>
-                        <li>
-                            <p>???</p>
-                        </li>
-                        <li>
-                            <p>???</p>
-                        </li>
-                      </ul>
                 </div>
-            </div>
 
-            <div class="card welcome-paragraph w-50 ms-3 mt-5 p-4 border rounded border-2 navbar-background"
-            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-            <h2 class="pb-2">Missão 1</h2>
-            <p>???</p>
-        </div>
+                <!-- Missão-1 Offcanvas -->
 
-        <!-- Missão-1 Offcanvas -->
+                <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="missao__protecao-1"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body welcome-paragraph">
+                        <p>A colônia de Gelthar, um planeta sob administração da Corporação, enfrenta uma invasão de
+                            insetos
+                            conhecidos
+                            como Beetles. Esses insetos se multiplicam rapidamente e ameaçam a estabilidade ecológica e
+                            o
+                            progresso da
+                            colônia. Sua missão é eliminar o enxame antes que ele se espalhe e comprometa as operações e
+                            a
+                            expansão
+                            territorial em Gelthar.</p>
+                        <p class="border-top pt-2">Concluido:</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped bg-success" style="width: 5%">0%</div>
+                        </div>
+                        <ul class="mt-4">
+                            <li>
+                                <p>???</p>
+                            </li>
+                            <li>
+                                <p>???</p>
+                            </li>
+                            <li>
+                                <p>???</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
-            aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body welcome-paragraph">
-                <p>???</p>
-                <p class="border-top pt-2">Concluido:</p>
-                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar progress-bar-striped bg-success" style="width: 25%">0%</div>
-                  </div>
-                  <ul class="mt-4">
-                    <li>
-                        <p>???</p>
-                    </li>
-                    <li>
-                        <p>???</p>
-                    </li>
-                    <li>
-                        <p>???</p>
-                    </li>
-                  </ul>
-            </div>
-        </div>
-
-        <div class="card welcome-paragraph w-50 ms-3 mt-5 p-4 border rounded border-2 navbar-background"
-        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-        <h2 class="pb-2">Missão 1</h2>
-        <p>???</p>
-    </div>
-
-    <!-- Missão-1 Offcanvas -->
-
-    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body welcome-paragraph">
-            <p>???</p>
-            <p class="border-top pt-2">Concluido:</p>
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar progress-bar-striped bg-success" style="width: 25%">0%</div>
-              </div>
-              <ul class="mt-4">
-                <li>
+                <div class="card welcome-paragraph w-75 mt-5 p-4 border rounded border-2 navbar-background"
+                    data-bs-toggle="offcanvas" data-bs-target="#missao__protecao-2" aria-controls="offcanvasRight">
+                    <h2 class="pb-2">Missão 2</h2>
                     <p>???</p>
-                </li>
-                <li>
-                    <p>???</p>
-                </li>
-                <li>
-                    <p>???</p>
-                </li>
-              </ul>
-        </div>
-    </div>
+                </div>
 
-            <h1 class="text-center navbar-title m-5">Inteligência</h1>
+                <!-- Missão-2 Offcanvas -->
 
-            <div class="card welcome-paragraph w-50 ms-3 mt-5 p-4 border rounded border-2 navbar-background"
-            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-            <h2 class="pb-2">Missão 1</h2>
-            <p>???</p>
-        </div>
-
-        <!-- Missão-1 Offcanvas -->
-
-        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
-            aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body welcome-paragraph">
-                <p>???</p>
-                <p class="border-top pt-2">Concluido:</p>
-                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar progress-bar-striped bg-success" style="width: 25%">0%</div>
-                  </div>
-                  <ul class="mt-4">
-                    <li>
+                <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="missao__protecao-2"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body welcome-paragraph">
                         <p>???</p>
-                    </li>
-                    <li>
+                        <p class="border-top pt-2">Concluido:</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped bg-success" style="width: 5%">0%</div>
+                        </div>
+                        <ul class="mt-4">
+                            <li>
+                                <p>???</p>
+                            </li>
+                            <li>
+                                <p>???</p>
+                            </li>
+                            <li>
+                                <p>???</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card welcome-paragraph w-75  mt-5 p-4 border rounded border-2 navbar-background"
+                    data-bs-toggle="offcanvas" data-bs-target="#missao__protecao-3" aria-controls="offcanvasRight">
+                    <h2 class="pb-2">Missão 3</h2>
+                    <p>???</p>
+                </div>
+
+                <!-- Missão-3 Offcanvas -->
+
+                <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="missao__protecao-3"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body welcome-paragraph">
                         <p>???</p>
-                    </li>
-                    <li>
+                        <p class="border-top pt-2">Concluido:</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped bg-success" style="width: 5%">0%</div>
+                        </div>
+                        <ul class="mt-4">
+                            <li>
+                                <p>???</p>
+                            </li>
+                            <li>
+                                <p>???</p>
+                            </li>
+                            <li>
+                                <p>???</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sector__intelligence d-lg-block d-flex flex-column align-items-center">
+                <h1 class="navbar-title my-5 w-100 pb-1" id="intelligence">Inteligência</h1>
+
+                <div class="card welcome-paragraph w-75 p-4 border rounded border-2 navbar-background"
+                    data-bs-toggle="offcanvas" data-bs-target="#missao__inteligencia-1" aria-controls="offcanvasRight">
+                    <h2 class="pb-2">Missão 1</h2>
+                    <p>???</p>
+                </div>
+
+                <!-- Missão-1 Offcanvas -->
+
+                <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="missao__inteligencia-1"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body welcome-paragraph">
                         <p>???</p>
-                    </li>
-                  </ul>
-            </div>
-        </div>
+                        <p class="border-top pt-2">Concluido:</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped bg-success" style="width: 5%">0%</div>
+                        </div>
+                        <ul class="mt-4">
+                            <li>
+                                <p>???</p>
+                            </li>
+                            <li>
+                                <p>???</p>
+                            </li>
+                            <li>
+                                <p>???</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-        <div class="card welcome-paragraph w-50 ms-3 mt-5 p-4 border rounded border-2 navbar-background"
-        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-        <h2 class="pb-2">Missão 1</h2>
-        <p>???</p>
-    </div>
-
-    <!-- Missão-1 Offcanvas -->
-
-    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body welcome-paragraph">
-            <p>???</p>
-            <p class="border-top pt-2">Concluido:</p>
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar progress-bar-striped bg-success" style="width: 25%">0%</div>
-              </div>
-              <ul class="mt-4">
-                <li>
+                <div class="card welcome-paragraph w-75  mt-5 p-4 border rounded border-2 navbar-background"
+                    data-bs-toggle="offcanvas" data-bs-target="#missao__inteligencia-2" aria-controls="offcanvasRight">
+                    <h2 class="pb-2">Missão 2</h2>
                     <p>???</p>
-                </li>
-                <li>
-                    <p>???</p>
-                </li>
-                <li>
-                    <p>???</p>
-                </li>
-              </ul>
-        </div>
-    </div>
+                </div>
 
-    <div class="card welcome-paragraph w-50 ms-3 mt-5 p-4 border rounded border-2 navbar-background"
-    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-    <h2 class="pb-2">Missão 1</h2>
-    <p>???</p>
-</div>
+                <!-- Missão-2 Offcanvas -->
 
-<!-- Missão-1 Offcanvas -->
-
-<div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
-    aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body welcome-paragraph">
-        <p>???</p>
-        <p class="border-top pt-2">Concluido:</p>
-        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-            <div class="progress-bar progress-bar-striped bg-success" style="width: 25%">0%</div>
-          </div>
-          <ul class="mt-4">
-            <li>
-                <p>???</p>
-            </li>
-            <li>
-                <p>???</p>
-            </li>
-            <li>
-                <p>???</p>
-            </li>
-          </ul>
-    </div>
-</div>
-
-            <h1 class="text-center navbar-title m-5">Exploração</h1>
-
-            <div class="card welcome-paragraph w-50 ms-3 mt-5 p-4 border rounded border-2 navbar-background"
-            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-            <h2 class="pb-2">Missão 1</h2>
-            <p>???</p>
-        </div>
-
-        <!-- Missão-1 Offcanvas -->
-
-        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
-            aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body welcome-paragraph">
-                <p>???</p>
-                <p class="border-top pt-2">Concluido:</p>
-                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar progress-bar-striped bg-success" style="width: 25%">0%</div>
-                  </div>
-                  <ul class="mt-4">
-                    <li>
+                <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="missao__inteligencia-2"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body welcome-paragraph">
                         <p>???</p>
-                    </li>
-                    <li>
+                        <p class="border-top pt-2">Concluido:</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped bg-success" style="width: 5%">0%</div>
+                        </div>
+                        <ul class="mt-4">
+                            <li>
+                                <p>???</p>
+                            </li>
+                            <li>
+                                <p>???</p>
+                            </li>
+                            <li>
+                                <p>???</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card welcome-paragraph w-75  mt-5 p-4 border rounded border-2 navbar-background"
+                    data-bs-toggle="offcanvas" data-bs-target="#missao__inteligencia-3" aria-controls="offcanvasRight">
+                    <h2 class="pb-2">Missão 3</h2>
+                    <p>???</p>
+                </div>
+
+                <!-- Missão-3 Offcanvas -->
+
+                <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="missao__inteligencia-3"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body welcome-paragraph">
                         <p>???</p>
-                    </li>
-                    <li>
+                        <p class="border-top pt-2">Concluido:</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped bg-success" style="width: 5%">0%</div>
+                        </div>
+                        <ul class="mt-4">
+                            <li>
+                                <p>???</p>
+                            </li>
+                            <li>
+                                <p>???</p>
+                            </li>
+                            <li>
+                                <p>???</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sector__exploration d-lg-block d-flex flex-column align-items-center">
+
+                <h1 class="navbar-title w-100 pb-1 my-5" id="exploration">Exploração</h1>
+
+                <div class="card welcome-paragraph w-75 p-4 border rounded border-2 navbar-background"
+                    data-bs-toggle="offcanvas" data-bs-target="#missao__exploracao-1" aria-controls="offcanvasRight">
+                    <h2 class="pb-2">Missão 1</h2>
+                    <p>???</p>
+                </div>
+
+                <!-- Missão-1 Offcanvas -->
+
+                <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="missao__exploracao-1"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body welcome-paragraph">
                         <p>???</p>
-                    </li>
-                  </ul>
-            </div>
-        </div>
+                        <p class="border-top pt-2">Concluido:</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped bg-success" style="width: 5%">0%</div>
+                        </div>
+                        <ul class="mt-4">
+                            <li>
+                                <p>???</p>
+                            </li>
+                            <li>
+                                <p>???</p>
+                            </li>
+                            <li>
+                                <p>???</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-        <div class="card welcome-paragraph w-50 ms-3 mt-5 p-4 border rounded border-2 navbar-background"
-        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-        <h2 class="pb-2">Missão 1</h2>
-        <p>???</p>
-    </div>
-
-    <!-- Missão-1 Offcanvas -->
-
-    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body welcome-paragraph">
-            <p>???</p>
-            <p class="border-top pt-2">Concluido:</p>
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar progress-bar-striped bg-success" style="width: 25%">0%</div>
-              </div>
-              <ul class="mt-4">
-                <li>
+                <div class="card welcome-paragraph w-75  mt-5 p-4 border rounded border-2 navbar-background"
+                    data-bs-toggle="offcanvas" data-bs-target="#missao__exploracao-2" aria-controls="offcanvasRight">
+                    <h2 class="pb-2">Missão 2</h2>
                     <p>???</p>
-                </li>
-                <li>
+                </div>
+
+                <!-- Missão-2 Offcanvas -->
+
+                <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="missao__exploracao-2"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body welcome-paragraph">
+                        <p>???</p>
+                        <p class="border-top pt-2">Concluido:</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped bg-success" style="width: 5%">0%</div>
+                        </div>
+                        <ul class="mt-4">
+                            <li>
+                                <p>???</p>
+                            </li>
+                            <li>
+                                <p>???</p>
+                            </li>
+                            <li>
+                                <p>???</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card welcome-paragraph w-75  mt-5 p-4 border rounded border-2 navbar-background"
+                    data-bs-toggle="offcanvas" data-bs-target="#missao__exploracao-3" aria-controls="offcanvasRight">
+                    <h2 class="pb-2">Missão 3</h2>
                     <p>???</p>
-                </li>
-                <li>
-                    <p>???</p>
-                </li>
-              </ul>
-        </div>
-    </div>
+                </div>
 
-    <div class="card welcome-paragraph w-50 ms-3 mt-5 p-4 border rounded border-2 navbar-background"
-    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-    <h2 class="pb-2">Missão 1</h2>
-    <p>???</p>
-</div>
+                <!-- Missão-3 Offcanvas -->
 
-<!-- Missão-1 Offcanvas -->
-
-<div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
-    aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 1</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body welcome-paragraph">
-        <p>???</p>
-        <p class="border-top pt-2">Concluido:</p>
-        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-            <div class="progress-bar progress-bar-striped bg-success" style="width: 25%">0%</div>
-          </div>
-          <ul class="mt-4">
-            <li>
-                <p>???</p>
-            </li>
-            <li>
-                <p>???</p>
-            </li>
-            <li>
-                <p>???</p>
-            </li>
-          </ul>
-    </div>
-</div>
+                <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="missao__exploracao-3"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title navbar-title" id="offcanvasRightLabel">Missão 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body welcome-paragraph">
+                        <p>???</p>
+                        <p class="border-top pt-2">Concluido:</p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped bg-success" style="width: 5%">0%</div>
+                        </div>
+                        <ul class="mt-4">
+                            <li>
+                                <p>???</p>
+                            </li>
+                            <li>
+                                <p>???</p>
+                            </li>
+                            <li>
+                                <p>???</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </section>
 
     </main>

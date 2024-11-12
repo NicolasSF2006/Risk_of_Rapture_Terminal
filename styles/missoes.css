@@ -4,11 +4,47 @@
     --bs-border-color:#1E5128;
 }
 
-.card {
-    box-shadow: 0 .5rem 1rem 8px rgba(0, 0, 0, .5);
-    transition: transform 0.3s ease-in-out;
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.card:hover {
-    transform: translateX(10px) scale(1.01); 
+#protection, #intelligence, #exploration {
+    border-bottom: solid #1E5128 1px;
+}
+
+@media screen and (min-width: 992px) {
+
+    .card {
+        box-shadow: 0 .5rem 1rem 8px rgba(0, 0, 0, .5);
+        transition: transform 0.3s ease-in-out;
+        width: 50%;
+    }
+    
+    .card:hover {
+        transform: translateX(10px) scale(1.01); 
+    }
+    
+    #protection, #intelligence, #exploration {
+        position: relative;
+        padding-bottom: 5px;
+        border-bottom: none;
+    }
+    
+    #protection::after, #intelligence::after, #exploration::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+      background-color: #1E5128;
+        transition: width 1s ease;
+    }
+    
+    .sector__protection:hover #protection::after, .sector__intelligence:hover #intelligence::after, .sector__exploration:hover #exploration::after {
+        width: 100%;
+    }
 }
